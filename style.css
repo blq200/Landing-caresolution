@@ -241,9 +241,28 @@
 }
 @media screen and (max-width:500px)
 {
-    #element1
+    .header
+    {
+        height: 30%;
+    }
+    .header img 
+    {
+        width: 45%;
+        height: 50%;
+    }
+    .button-action
     {
         font-size: 2em;
+    }
+    #element1
+    {
+        font-size: 1.5em;
+    }
+    #element3
+    {
+        margin-top: 20%;
+        width: 115%;
+        height: 60%;
     }
     .article
     {
@@ -257,7 +276,7 @@
     }
     .patte-btn p
     {
-        margin-top: -8%;
-        margin-left: 45%;
+        margin-top: -10%;
+        margin-left: 52%;
     }
 }
