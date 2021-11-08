@@ -1,0 +1,263 @@
+#bloc-page
+{
+    max-width: 1300px;
+    min-width: 300px;
+    margin: auto;
+    
+}
+.header
+{
+    display: flex;
+    height: 400px;
+    background-image: linear-gradient(to right top, #a95e6d, #bb7584, #ce8d9b, #e0a5b3, #f2becb);
+    -webkit-box-shadow: -2px -1px 15px 7px rgba(0,0,0,0.5);
+    -moz-box-shadow: -3px -2px 30px 14px rgba(0,0,0,0.425);
+    box-shadow: 10px 10px -10px 21px rgba(0,0,0,0.35);
+}
+    
+.header img
+{
+  display: block;
+  margin: 0 auto;
+  padding-left: 5%;
+  width: 60%;
+  
+}
+.button-action
+{
+    display:flex;
+    flex-direction: row-reverse;
+    font-size: 3em;
+}
+.button-action i
+{
+    color: #000;
+}
+.button-action a
+{
+    display: block;
+    margin: 15% 10%;
+}
+.button-action a :hover
+{ 
+    color: #A95E6D;
+  
+}
+.description1
+{ 
+    display: flex;
+}
+.description1 h1
+{
+    font-size: 2em;
+    font-family: 'Quintessential', cursive;
+    color: #68676D;
+    margin-left: 15px;
+  }
+.description1 video
+{
+    margin: 15px auto;
+}
+.description1 img{
+    width: 30%;
+    margin-top: 2%;
+}
+.description2
+{
+    display: flex;
+    margin: auto;
+}
+#img1
+{
+    width: 30%;
+}
+#img2
+{
+    display: block;
+    width: 550px;
+    margin-right: 25px;
+    
+}
+.article
+{
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ font-size: 1.3em;
+ margin-left: 5%;
+
+ 
+}
+.article h1
+{
+    display: block;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    color:#e0a5b3;
+}
+.small-article ul
+{
+    display: block;
+    margin-left: 20%;
+}
+
+.small-article p
+{
+    display: block;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    color: #6C6B71;
+}
+.small-article li
+{
+    display: block;
+    list-style-position: inside;
+    font-family: 'Raleway', sans-serif;
+    color: #6C6B71;
+}
+.patte-btn p
+{
+    position: static;
+    text-decoration: none;
+    color: #fff;
+    font-size: 0.7em;
+    font-family: 'Raleway', sans-serif;
+    margin-left: 125px;
+    margin-top: -30px;
+}
+.patte-btn i
+{
+    text-decoration: none;
+    color: #A95E6D;
+    margin-left: 35%;
+    font-size: 100px;
+}
+.patte-btn a :hover
+{
+    
+    color: #e0a5b3 ;
+}
+
+#copyright
+{
+    background-color: #000;
+}
+#copyright p
+{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    color: #DDDDDD;
+}
+ 
+
+@media screen and (max-width:1100px)
+{
+    .button-action
+    {
+        display: flex;
+        flex-direction: column;
+        margin-right: 1%;
+    }
+    .description1 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    #element1
+    {
+        order: 1;
+        font-size: 3em;
+        margin: 5%;
+    }
+    #element2
+    {
+        order: 3;
+        width: 200%;
+        
+    }
+    #element3
+    {
+        order: 2;
+        margin: 5%;
+        width: 100%;
+        height: 80%;
+    }
+
+    .description2 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    #img1
+    {
+        order: 1;
+        margin: 5%;
+        width: 100%;
+        height: 80%;
+    }
+    #img2
+    {
+        order: 3;
+        margin: 5%;
+        width: 190%;
+        height: 90%;
+    }
+    .article
+    {
+        order: 2;
+        font-size: 1em;
+        margin: 20%;
+    }
+    .small-article ul
+    {
+        margin-left: 22%;
+    }
+    #patte-btn p
+    {
+        position: static;
+        text-decoration: none;
+        margin-left: 44%;
+        font-size: 0.7em;
+    }
+  
+}
+@media screen and (max-width:800px)
+{
+    .article
+    {
+        margin: 10%;
+    }
+   
+}
+@media screen and (max-width:600px)
+{
+    #element1
+    {
+        font-size: 2em;
+    }
+    .article
+    {
+        margin: -4%;
+    }
+   
+}
+@media screen and (max-width:500px)
+{
+    #element1
+    {
+        font-size: 2em;
+    }
+    .article
+    {
+        font-size: 12px;
+        margin: -2%;
+    }
+    .patte-btn i
+    {
+        font-size: 55px;
+        margin-left: 88px;
+    }
+    .patte-btn p
+    {
+        margin-top: -8%;
+        margin-left: 45%;
+    }
+}
